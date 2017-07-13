@@ -1,6 +1,6 @@
 /*
 curtain asset
-"click the curtain to select your seat"
+"click the curtain and select your seat"
 create a container div that will drop form the top of the screen as the curtain raises
 "please select your seats" fades in when the div is in place.
 UI bar shows up on seat click
@@ -24,7 +24,15 @@ hover over reserved seats shows styled tooltip
 .middle
 .right
 
+.seat
+
 /* Code relating to mouse events */
-.hover
-.selected
-.reserved
+.hover {
+  background-color: green;
+}
+.selected {
+  background-color: yellow;
+}
+.reserved {
+  background-color: red;
+}
