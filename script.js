@@ -1,14 +1,11 @@
 $(function () {
 
-var $seats=$('div.seat') //efficient?
-
 //hover functionality
-$seats.on('mouseover', function (){
-  //$(this).addClass('hover');
-  console.log('I see you!')
+$('div.seat').mouseenter(function (){
+  $(this).addClass('hover');
 });
 //selected functionality
-$seats.on('click', function (){
+$('div.seat').on('click', function (){
   $(this).toggleClass('selected')
 });
 
